@@ -46,6 +46,7 @@ function configureSidebarNavigation() {
         const spanText = button.querySelector('span').innerText.trim();
 
         button.addEventListener('click', () => {
+            navMenuButtons.forEach(btn => btn.classList.remove('selected'))
             let firstButtonActivated = false;
 
             navMenuButtons.forEach(navButton => {
@@ -54,14 +55,17 @@ function configureSidebarNavigation() {
                     visibilityMap[spanText] &&
                     visibilityMap[spanText].includes(navButtonText)
                 ) {
-                    navButton.style.display = 'block';  // Exibe o botão correspondente
-                    navButton.disabled = false;        // Habilita o botão
+                    navButton.style.display = 'block';  
+                    navButton.disabled = false;        
 
                     // Ativar o primeiro botão da lista visível
-                    //if (!firstButtonActivated) {
-                       // navButton.classList.add('selected');  // Adiciona a classe 'selected'
-                        //firstButtonActivated = true;  // Marca que o primeiro botão já foi ativado
-                    //}
+                    if (!firstButtonActivated) {
+                        navButton.classList.add('selected');  
+                        firstButtonActivated = true;  
+                        // Carregar o conteúdo relacionado ao primeiro botão
+                        const pageToLoad = navButton.getAttribute('onclick').match(/'([^']+)'/)[1];  
+                        loadContent(pageToLoad);
+                    }
                 } else {
                     navButton.style.display = 'none';   // Oculta outros botões
                     navButton.disabled = true;          // Desabilita botões não correspondentes
