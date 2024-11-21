@@ -1,0 +1,95 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 250px; 
+    height: 100vh; 
+    background-color: white; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    display: flex; 
+    flex-direction: column;
+   
+}
+
+header {
+    padding: 10px; 
+    text-align: center;
+    background-color: rgb(255, 254, 254); 
+}
+
+header img {
+    max-width: 90%;
+    height: auto;
+}
+
+header h1 {
+    margin: 5px 0; 
+}
+
+header .oferta {
+    color: orange; 
+}
+
+header .ganhe {
+    color: #188642; 
+}
+
+nav {
+    flex-grow: 1; 
+    background-color: #188642; 
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 0; 
+}
+
+nav button:first-child {
+    margin-top: 15px; 
+}
+
+
+button {
+    padding: 15px;
+    border: none; 
+    background-color: #188642; 
+    color: white; 
+    font-size: 0.98rem;
+    display: flex; 
+    align-items: center; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+
+button img {
+    margin-right: 20px;
+    max-width: 24px; 
+    height: auto; 
+}
+
+button:hover {
+    background-color: #0B4120; 
+}
+
+button.selected {
+    background-color: #0B4120; 
+}
+
+.button-exit {
+    margin-top: auto; 
+    margin-bottom: 10px; 
+}
+
+.auxiliary-bar {
+    background-color: #188642; /* Cor verde */
+    height: 92px; /* Defina a altura da barra auxiliar */
+    position: fixed; /* Fixa a barra na parte superior */
+    left: 250px; /* Posiciona a barra ao lado do aside */
+    top: 0; /* Alinha a barra ao topo da página */
+    width: calc(100% - 250px); /* Preenche o restante da largura da tela */
+    z-index: 1; /* Certifica-se de que a barra fique acima de outros elementos */
+}
+
