@@ -90,6 +90,6 @@ button.selected {
     left: 250px; /* Posiciona a barra ao lado do aside */
     top: 0; /* Alinha a barra ao topo da página */
     width: calc(100% - 250px); /* Preenche o restante da largura da tela */
-    z-index: 1; /* Certifica-se de que a barra fique acima de outros elementos */
+    z-index: 1000;
 }
 

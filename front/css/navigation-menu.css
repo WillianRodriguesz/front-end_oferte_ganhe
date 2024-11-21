@@ -38,6 +38,7 @@ body {
     box-shadow: none; 
     gap: 15px; 
     margin-left: 20px;
+    z-index: 100;
 }
 
 .navigation-menu button {
@@ -60,7 +61,7 @@ body {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    text-align: center; 
+    text-align: center;
 }
 
 .navigation-menu button:hover {
