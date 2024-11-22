@@ -1,17 +1,11 @@
-<!-- Status de Envio de Talões -->
 <div class="container mt-2">
     <h3 class="mb-4 text-start">Status de Envio de Talões</h3>
 
     <!-- Filtro e Botões -->
     <div class="row mb-4">
         <div class="col-md-6">
-            <div class="input-group">
-                <input type="text" id="filtro-unidade" name="filtro-unidade" class="form-control rounded-3" placeholder="Digite o nome da unidade" 
-                    style="background-image: url('/front/css/img/iconLupaPesquisa.svg'); 
-                           background-repeat: no-repeat; 
-                           background-position: right 10px center; 
-                           padding-right: 30px;
-                           z-index: 1;">
+            <div class="search-bar">
+                <input type="text" id="filtro-unidade" name="filtro-unidade" placeholder="Digite o nome da unidade" >
             </div>
         </div>
         <div class="col-md-3 d-flex align-items-end">
@@ -19,14 +13,17 @@
                 class="btn btn-outline-secondary w-100 rounded-3" 
                 type="button" 
                 id="btn-download-csv" 
-                style="border: 1px solid #ccc; color: #888;">
+                style="border: 1px solid #ccc; color: #888; display: flex; align-items: center; justify-content: center; padding: 8px 16px; height: 38px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+
+                <!-- Imagem à esquerda do texto -->
                 <img src="/front/css/img/iconDownload.svg" alt="Imagem do CSV" style="width: 24px; height: 24px; margin-right: 10px;">
 
-                Baixar CSV
+                <!-- Texto do botão -->
+                CSV
             </button>
         </div>
         <div class="col-md-3 d-flex align-items-end">
-            <button class="btn btn-success w-100 rounded-3" type="button" id="btn-enviar">
+            <button class="btn btn-success w-100 rounded-3" type="button" id="btn-enviar" style="height: 38px;">
                 Enviar
             </button>
         </div>
@@ -73,5 +70,4 @@
             </tbody>
         </table>
     </div>
-    
 </div>
