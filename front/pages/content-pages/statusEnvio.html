@@ -31,8 +31,8 @@
 
     <!-- Tabela de Status -->
     <div class="table-responsive">
-        <table class="table table-striped table-bordered">
-            <thead>
+        <table class="table table-striped table-hover table-bordered shadow-sm rounded">
+            <thead class="table-light">
                 <tr>
                     <th class="text-center">Status</th>
                     <th class="text-center">Unidade</th>
@@ -44,28 +44,26 @@
             <tbody id="status-table-body">
                 <!-- Exemplo de linha -->
                 <tr>
-                    <td class="text-center">Enviado</td>
+                    <td class="text-center"><span class="badge bg-success">Recebido</span></td>
                     <td>Loja 1</td>
                     <td class="text-center">2024-11-21</td>
                     <td class="text-center">
-                        <!-- Botão de Detalhes com Imagem -->
                         <button class="btn btn-link" id="btn-detalhes-1">
                             <img src="/front/css/img/iconDetalhes.svg" alt="Detalhes" style="width: 24px; height: 24px;">
                         </button>
                     </td>
-                    <td class="text-center"><input type="checkbox" class="form-check-input" style="border: 2px solid black;"></td>
+                    <td class="text-center"><input type="checkbox" class="form-check-input" style="border: 1px solid #000000;"></td>
                 </tr>
                 <tr>
-                    <td class="text-center">Em Trânsito</td>
-                    <td >Loja Pelotas</td>
+                    <td class="text-center"><span class="badge bg-warning">Em Trânsito</span></td>
+                    <td>Loja Pelotas</td>
                     <td class="text-center">2024-11-20</td>
                     <td class="text-center">
-                        <!-- Botão de Detalhes com Imagem -->
-                        <button class="btn btn-link" id="btn-detalhes-1">
+                        <button class="btn btn-link" id="btn-detalhes-2">
                             <img src="/front/css/img/iconDetalhes.svg" alt="Detalhes" style="width: 24px; height: 24px;">
                         </button>
                     </td>
-                    <td class="text-center"><input type="checkbox" class="form-check-input" style="border: 2px solid black;"></td>
+                    <td class="text-center"><input type="checkbox" class="form-check-input" style="border: 1px solid #000000;"></td>
                 </tr>
             </tbody>
         </table>

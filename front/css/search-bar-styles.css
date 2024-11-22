@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     width: 100%; /* Ocupa toda a largura disponível */
-    max-width: 600px; /* Limita a largura do campo */
+    max-width: 2000px; /* Limita a largura do campo */
 }
 
 /* Estilo do campo de entrada */
