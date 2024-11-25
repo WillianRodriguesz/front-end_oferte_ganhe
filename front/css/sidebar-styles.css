@@ -19,6 +19,11 @@ header {
     padding: 10px;
     text-align: center;
     background-color: rgb(255, 254, 254);
+    height: 90px; /* Define uma altura fixa */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-sizing: border-box; 
 }
 
 header img {
