@@ -41,7 +41,7 @@ function configureSidebarNavigation() {
         navButton.disabled = true; 
     });
 
-    // Adiciona eventos de clique nos botões do sidebar
+    // Adiciona eventos de clique nos botões do menu auxiliar
     sidebarButtons.forEach(button => {
         const spanText = button.querySelector('span').innerText.trim();
 
