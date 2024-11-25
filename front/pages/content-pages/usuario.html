@@ -1,5 +1,23 @@
 <h2>Usuários Cadastrados</h2>
 
+<div class="row mb-4">
+    <div class="col-md-9"> <!-- Ajustando o tamanho da coluna para o campo de pesquisa -->
+        <label for="filtro-unidade" class="form-label">Nome</label>
+        <div class="search-bar">
+            <input type="text" id="filtro-unidade" name="filtro-unidade" class="form-control campo-pesquisa" placeholder="Digite o nome do colaborador">
+        </div>
+    </div>
+
+    <div class="col-md-3 d-flex align-items-end"> <!-- Ajustando a coluna do botão de pesquisa -->
+        <div class="text-center w-100">
+            <button type="button" class="btn btn-outline-success w-100" id="btn-pesquisar">
+                Pesquisar
+            </button>
+        </div>
+    </div>
+
+</div>
+
 <div class="container mt-4">
     <table class="table table-striped">
         <thead>
