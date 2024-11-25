@@ -32,7 +32,8 @@ function configureSidebarNavigation() {
         'Recebimento de Talões': ['Recebimento'],
         'Gerenciar Estoque': ['Estoque', 'Estoque Geral'],
         'Gerenciar Perfil': ['Cadastrar Usuário', 'Perfil', 'Usuário'],
-        'Cadastrar Loja': ['Cadastrar Loja', 'Lojas']
+        'Cadastrar Loja': ['Cadastrar Loja', 'Lojas'],
+        'Gerar Relatórios':['Gerar Relatórios']
     };
 
     // Inicializa todos os botões do navigation-menu como invisíveis
