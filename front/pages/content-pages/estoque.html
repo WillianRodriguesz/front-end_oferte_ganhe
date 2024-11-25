@@ -1,38 +1,39 @@
 <h2>Estoque</h2>
 <div class="container my-4">
-    <div class="row">
-        <!-- Primeiro Card -->
+    <div class="row g-3">
+        <!-- Primeiro Botão -->
         <div class="col-md-4">
-            <div class="card text-center border-success h-100">
-                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <button class="btn btn-outline-success text-center w-100" style="height: 250px; border-width: 2px;">
+                <div class="d-flex flex-column justify-content-center align-items-center h-100 p-0">
                     <h5 class="card-title text-dark">Solicitar Reposição</h5>
                     <img src="/front/css/img/iconEstoque2.svg" alt="Imagem 1" class="img-fluid" style="max-width: 100px;">
                 </div>
-            </div>
+            </button>
         </div>
         
-        <!-- Segundo Card -->
+        <!-- Segundo Botão -->
         <div class="col-md-4">
-            <div class="card text-center border-success h-100">
-                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <button class="btn btn-outline-success text-center w-100 disabled-button" style="height: 250px; border-width: 2px;">
+                <div class="d-flex flex-column justify-content-center align-items-center h-100 p-0">
                     <h5 class="card-title text-dark">Estoque Atual da Loja</h5>
                     <img src="/front/css/img/iconEstoqueAtual.svg" alt="Imagem 2" class="img-fluid" style="max-width: 100px;">
                     <p class="card-text text-success mt-3">8 unidades</p>
                 </div>
-            </div>
+            </button>
         </div>
         
-        <!-- Terceiro Card -->
+        <!-- Terceiro Botão -->
         <div class="col-md-4">
-            <div class="card text-center border-success h-100">
-                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <button class="btn btn-outline-success text-center w-100" style="height: 250px; border-width: 2px;">
+                <div class="d-flex flex-column justify-content-center align-items-center h-100 p-0">
                     <h5 class="card-title text-dark">Retirar Talão para Colaborador</h5>
                     <img src="/front/css/img/iconRetirarTalao.svg" alt="Imagem 3" class="img-fluid" style="max-width: 100px;">
                 </div>
-            </div>
+            </button>
         </div>
     </div>
 </div>
+
 
 
 <div class="row mb-4">
@@ -81,3 +82,24 @@
         </tbody>
     </table>
 </div>
+
+<style>
+    .btn-outline-success:hover {
+    background-color: rgba(40, 167, 69, 0.1); /* Verde suave com transparência */
+    border-color: #28a745; /* Borda verde */
+    }
+
+    /* Botão desabilitado */
+    button:disabled, .disabled-button {
+        pointer-events: none; /* Desabilita o clique */
+        opacity: 1; /* Mantém a opacidade consistente */
+        background-color: transparent; /* Remove fundo adicional */
+        border-color: #28a745; /* Mantém a borda verde */
+    }
+
+    /* Remover hover para botões desabilitados */
+    button:disabled:hover, .disabled-button:hover {
+        background-color: transparent !important;
+        border-color: #28a745 !important;
+    }
+</style>
