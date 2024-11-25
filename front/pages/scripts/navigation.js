@@ -109,4 +109,10 @@ function configureSidebarSelection() {
     });
 }
 
+// Aciona animação sidebar
+function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('closed');
+}
+
 
